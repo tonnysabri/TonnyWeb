@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum vitae",
+    "section": "",
+    "text": "Click here\n\nContact Information\n\n\nEducation\n\n\nCurrent Position(s)\n\n\nPrevious Position(s)"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -14,10 +21,17 @@
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Curriculum vitae",
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "My Blog",
     "section": "",
-    "text": "Click here\n\nContact Information\n\n\nEducation\n\n\nCurrent Position(s)\n\n\nPrevious Position(s)"
+    "text": "No matching items"
+  },
+  {
+    "objectID": "index.qmd*.html",
+    "href": "index.qmd*.html",
+    "title": "blog post title",
+    "section": "",
+    "text": "CitationBibTeX citation:@online{untitled,\n  author = {},\n  title = {Blog Post Title},\n  url = {https://z34lmc.github.io/demo/YYYY-MM-DD-short-post-description/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\n“Blog Post Title.” n.d. https://z34lmc.github.io/demo/YYYY-MM-DD-short-post-description/."
   }
 ]
