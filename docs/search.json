@@ -12,5 +12,12 @@
     "title": "Tonny Web",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum vitae",
+    "section": "",
+    "text": "Click here\n\nContact Information\n\n\nEducation\n\n\nCurrent Position(s)\n\n\nPrevious Position(s)"
   }
 ]
