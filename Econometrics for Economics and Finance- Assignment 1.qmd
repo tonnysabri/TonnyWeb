@@ -2,13 +2,7 @@
 title: "Econometrics for Economics and Finance: Assignment 1"
 author: "Tonny Alex"
 date: "2026-10-08"
-format:
-  pdf:
-    toc: false
-    number-sections: true
-    colorlinks: true
-    fig-format: png
-embed-resources: true
+format: html
 ---
 
 question (2)
