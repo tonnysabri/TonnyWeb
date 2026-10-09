@@ -1,0 +1,9 @@
+---
+title: "assignment 1"
+date: "2026-10-06"
+author: "Tonny Alex"
+---
+
+- Q2
+$$y
+

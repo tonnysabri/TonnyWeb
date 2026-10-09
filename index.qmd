@@ -2,6 +2,14 @@
 title: "Tonny Web"
 ---
 
+Tonny Alex
+
+credentials - Bachelor of Business Administration (BBA) in Finance & Economics, University of Winnipeg
+
+About Me
+
+## Currently, I am in my third year of study in the field of Finance and Economics at the University of Winnipeg. During my academic journey, I have been able to cultivate my keen interest in regard to investment analysis and portfolio management. Through the studies, I know a great deal about corporate finance, macroeconomics, and asset pricing, which have influenced my opinions on how capital moves within the economy. My fascination of finance lies in how financial markets allocate capital and price risk because in essence every price is a collective evaluation of what is going to happen in the future. Apart from studies, I keep an eye on the stock and bond markets, monitor the economic indicators affecting the values of assets, devise valuation and portfolio models in Excel, and am beginning to learn R and Quarto in order to boost my analytical and data-presentation skills for the future real-life application. In terms of my career aspirations, I would like to work in the field of asset management or investment research, and this website would give me the chance to demonstrate my skills in practical terms.
+
 This is a Quarto website.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

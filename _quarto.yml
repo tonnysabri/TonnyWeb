@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Tonny Web"
-  navbar:
+  navbar: 
     left:
       - href: index.qmd
         text: Home

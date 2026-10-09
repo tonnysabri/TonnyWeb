@@ -1,0 +1,307 @@
+---
+title: "Econometrics for Economics and Finance: Assignment 1"
+author: "Tonny Alex"
+date: "2026-10-08"
+format:
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+    fig-format: png
+embed-resources: true
+---
+
+question (2)
+
+Let 𝑋 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 be a uniformly distributed variable with probability distribution function 𝑓𝑋 (𝑥) = 1/12
+
+\(a\) Check that 𝑓𝑋 (𝑥) is a true probability distribution.
+
+$$
+\frac{1}{12} > 0 \quad \text{for all } x \in \{1, 2, \dots, 12\}
+$$
+
+$$
+\sum\limits_{x=1}^{12} f_X(x) = \sum\limits_{x=1}^{12} \frac{1}{12} = 12 \times \frac{1}{12} = 1
+$$
+
+Since both conditions are satisfied f(x) is a valid probability mass function.
+
+\(b\) Compute the expected value of 𝑋.
+
+$$
+ E[X] = \sum_{x=1}^{12} x \cdot f_X(x) 
+$$
+
+$$
+ E[X] =\sum_{x=1}^{12} x = \frac{12(12+1)}{2} = \frac{12 \times 13}{2} = 78 
+$$
+
+$$
+E[X] = \frac{1}{12} \times 78 = \frac{78}{12} = 6.5 
+$$ c) Compute the variance of 𝑋.
+
+$$
+Var(X)=E[X^2]−(E[X])^2
+$$
+
+$$
+E[X^2] = \sum_{x=1}^{12} x^2 \cdot f_X(x) = \frac{1}{12} \sum_{x=1}^{12} x^2 \
+$$
+
+$$
+\sum_{x=1}^{12} x^2 = \frac{12(12+1)(2 \times 12 + 1)}{6} = \frac{12 \times 13 \times 25}{6} = 650 
+$$
+
+$$
+[ E[X^2] = \frac{650}{12} = \frac{325}{6} 
+$$
+
+$$
+\text{Var}(X) = \frac{325}{6} - \left(\frac{13}{2}\right)^2 = \frac{325}{6} - \frac{169}{4}
+$$
+
+$$
+\text{Var}(X) = \frac{650}{12} - \frac{507}{12} = \frac{143}{12} \approx 11.92
+$$
+
+Question (3)
+
+Let 𝑋 ∼ 𝑁 (4, 5). Find the probability of each event:
+
+\(a\) pr(𝑋 ≤ 6)
+
+$$ Z = \frac{6-4}{\sqrt{5}} = \frac{2}{\sqrt{5}} \approx 0.8944$$
+
+$$
+P(X≤6)=P(Z≤0.8944)≈0.8145
+$$
+
+\(b\) 𝑃 𝑟(𝑋 \> 4)
+
+$$
+ Z = \frac{4-4}{\sqrt{5}} = 0 
+$$
+
+$$
+P(X>4)=P(Z>0)=0.500
+$$
+
+\(c\) 𝑃𝑟(−1 ≤ 𝑋 \< 1)
+
+$$
+ Z_1 = \frac{-1-4}{\sqrt{5}} = \frac{-5}{\sqrt{5}} = -\sqrt{5} \approx -2.2361 
+$$
+
+$$
+Z_2 = \frac{1-4}{\sqrt{5}} = \frac{-3}{\sqrt{5}} \approx -1.3416 
+$$
+
+$$
+\Pr(-1 \le X < 1) = \Pr(-2.2361 \le Z < -1.3416) = \Phi(-1.3416) - \Phi(-2.2361) 
+$$
+
+$$
+\Phi(-1.3416) \approx 0.0899 
+$$
+
+$$
+\Phi(-2.2361) \approx 0.0127 
+$$
+
+$$ \Pr(-1 \le X < 1) = 0.0899 - 0.0127 = 0.0772 
+$$
+
+question (4)
+
+Let 𝑍 ∼ 𝑁 (0, 1).
+
+\(a\) Compute 𝑃 𝑟(𝑍 ≤ 0.83)
+
+$$
+ \Pr(Z \le 0.83) = \Phi(0.83) \approx 0.7967 
+$$
+
+\(b\) Compute 𝑃 𝑟(−0.83 ≤ 𝑍 ≤ 0.83)
+
+$$
+\Pr(-0.83 \le Z \le 0.83) = \Phi(0.83) - \Phi(-0.83) 
+$$
+
+$$
+\Pr(-0.83 \le Z \le 0.83) = \Phi(0.83) - (1 - \Phi(0.83)) = 2\Phi(0.83) - 1 
+$$
+
+$$
+\Pr(-0.83 \le Z \le 0.83) = 2(0.7967) - 1 = 1.5934 - 1 = 0.5934 
+$$
+
+Question 5
+
+Let 𝑋 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 be a uniformly distributed variable with probability
+
+distribution function 𝑓𝑋 (𝑥) = 1/12.
+
+\(a\) Plot the probability distribution function 𝑓𝑋 (𝑥) in R.
+
+![](http://127.0.0.1:23518/graphics/70a19b12-5fe4-41ff-8d1b-10ff1c8c5133.png){width="200"}
+
+\(b\) Plot the cumulative probability distribution function 𝑓𝑋 (𝑥)𝑖𝑛 𝑅
+
+![](http://127.0.0.1:23518/graphics/b18e8136-fcf7-43e2-975a-b80b3c0581db.png){width="200"}
+
+c)  Compute the expected value of 𝑋 in R.
+
+x \<- 1:12
+
+\> fx \<- rep(1/12, 12)
+
+\> EX \<- sum(x \* fx)
+
+\> EX
+
+\[1\] 6.5
+
+d\) Compute the variance of 𝑋 in R.
+
+\> x \<- 1:12
+
+\> fx \<- rep(1/12, 12)
+
+\> EX \<- sum(x \* fx)
+
+\> EX2 \<- sum(x\^2 \* fx)
+
+\> VarX \<- EX2 - EX\^2
+
+\> VarX
+
+\[1\] 11.91667
+
+Question 6
+
+a\) Define this function in R. 
+
+$$
+f(x) = \frac{e^{-\frac{x^2}{2}}}{\sqrt{2\pi}\sigma}
+$$b) Integrate this function over the limit \[−∞, ∞\] using the integrate() command in R. Infinity in R is written as Inf. To evaluate the integral, use integrate()\$value
+
+> f \<- function(x, sigma) { + exp(-x\^2 / 2) / (sqrt(2 \* pi) \* sigma) + }
+>
+> integrate(f, lower = -Inf, upper = Inf, sigma = 1)\$value
+>
+> \[1\] 1
+
+c)  Compute the expected value of the standard normal distribution in R and confirm it is equal to 0.
+
+> #Define the standard normal PDF
+>
+> f \<- function(x) { + exp(-x\^2 / 2) / sqrt(2 \* pi) + }
+>
+> Integrand for expected value: x \* f(x)
+>
+> g \<- function(x) { + x \* f(x) + }
+>
+> Integrate from -Inf to Inf
+>
+> integrate(g, lower = -Inf, upper = Inf)\$value
+>
+> \[1\] 0
+
+d)  Compute the variance of the standard normal distribution in R and confirm it is equal to 1.
+
+# Standard normal PDF
+
+f \<- function(x) exp(-x\^2 / 2) / sqrt(2 \* pi)
+
+E\[X\^2\]
+
+EX2 \<- integrate(function(x) x\^2 \* f(x), -Inf, Inf)\$value
+
+E\[X\]
+
+EX \<- integrate(function(x) x \* f(x), -Inf, Inf)\$value
+
+Variance
+
+VarX \<- EX2 - EX\^2
+
+VarX
+
+\[1\] 1
+
+e\) Compute 𝑃 𝑟(𝑍 ≤ 0.83)
+
+> pnorm(0.83) \[1\] 0.7967306
+
+f\) Compute 𝑃 𝑟(−0.83 ≤ 𝑍 ≤ 0.83)
+
+> pnorm(0.83) - pnorm(-0.83) \[1\] 0.5934612
+
+g\) Compute 𝑃 𝑟(−0.83 ≤ 𝑍 ≤ 0.83) using the pnorm() command and compare your results to
+
+> pnorm(0.83) - pnorm(-0.83)
+>
+> \[1\] 0.5934612
+
+question 7
+
+a\) Define 𝑓(𝑥) in R
+
+f \<- function(x) { (1/9) \* x\^2 }
+
+b\) Integrate 𝑓(𝑥) over the interval \[0,3\].
+
+$$
+\int_{0}^{3} \frac{1}{9}x^2 \, dx = \frac{1}{9} \int_{0}^{3} x^2 \, dx
+$$
+
+$$
+= \frac{1}{9} \left[ \frac{x^3}{3} \right]_{0}^{3}
+$$
+
+$$
+= \left[ \frac{x^3}{27} \right]_{0}^{3}
+$$
+
+$$
+= \left( \frac{3^3}{27} \right) - \left( \frac{0^3}{27} \right)
+$$
+
+$$
+= \frac{27}{27} - 0 = 1
+$$
+
+\(c\) Compute the expected prison sentence.
+
+$$
+E[X] = \int_{0}^{3} x \cdot f(x) \, dx = \int_{0}^{3} x \left( \frac{1}{9} x^2 \right) \, dx = \int_{0}^{3} \frac{1}{9} x^3 \, dx 
+$$
+
+$$
+\int \frac{1}{9} x^3 \, dx = \frac{1}{9} \left( \frac{x^4}{4} \right) = \frac{x^4}{36} 
+$$
+
+$$
+E[X] = \left[ \frac{x^4}{36} \right]_{0}^{3} = \frac{3^4}{36} - 0 = \frac{81}{36} = 2.25 \text{ years} 
+$$
+
+question (8)
+
+\(i\) Plot the standard normal probability distribution using curve(). Specify the range as \[-5,5\] using xlim. Name the ylab “Density”. The main title should be “Densities of t Distribution”.
+
+![](http://127.0.0.1:23518/graphics/084a62b0-e646-46c4-99cf-b687a535f97a.png){width="300"}
+
+\(ii\) Plot the Student t distribution with 5 degrees of freedom using curve() and dt(). Specify the range as \[-5,5\] using xlim. Choose a different colour, i.e. col=2. To learn more about dt, type ?dt in your console.
+
+![](http://127.0.0.1:23518/graphics/f8c7b27a-8736-4074-8eed-6e0ee77c8587.png){width="300"} (iii) Plot the Student t distribution with 15 degrees of freedom using curve() and dt(). Specify the range as \[-5,5\] using xlim. Choose a different colour, i.e. col=3. To learn more about dt, type ?dt in your console.
+
+![](http://127.0.0.1:23518/graphics/50f02e56-b11d-4733-83b0-97ca22ec7998.png){width="300"}
+
+iv\) Plot the Student t distribution with 25 degrees of freedom using curve() and dt(). Specify the range as \[-5,5\] using xlim. Choose a different colour, i.e. col=4. To learn more about dt, type ?dt in your console.
+
+![](http://127.0.0.1:23518/graphics/5a1784a7-5e22-4361-86f1-2a291989f10e.png){width="300"}
+
+\(v\) Include the following legend in you plot: legend("topright", c("N(0, 1)", "M=2", "M=4", "M=25"), col = 1:4, lty = c(1, 1, 1, 1))
+
+![](http://127.0.0.1:23518/graphics/1c785a06-bb1d-45ea-94c4-e19b5159f80f.png){width="300"}
